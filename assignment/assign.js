@@ -95,13 +95,3 @@
 
 /////function///
 
-function add(x, y){
-   return 1+(x+y)/2
-}
-let a=2;
-let b=3;
-let c=4;
-
-console.log( add(a, b));
-console.log("average plus one of b and c is", add(b, c));
-console.log("average plus one of a and c is", add(a, c));
