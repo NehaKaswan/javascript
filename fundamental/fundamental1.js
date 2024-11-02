@@ -57,7 +57,7 @@
 // const age ="2004";
 // const year ="2024";
 
-// const newLine= `I'm ${firstName} ${lastName}, a ${year-age}year old ${job}. `;
+//const newLine= `I'm ${firstName} ${lastName}, a ${year-age}year old ${job}. `;
 // console.log(newLine);
  
 // console.log(`string

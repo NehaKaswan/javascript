@@ -95,3 +95,27 @@
 
 /////function///
 
+/////array assign1 part-2
+function caclAverage(s1, s2, s3){
+    return (s1+s2+s3)/3
+}
+const avgKoalas = caclAverage(65, 54, 49);
+const avgDolphin = caclAverage(44, 23, 71)
+
+console.log(avgKoalas);
+console.log(avgDolphin);
+ 
+if(avgDolphin>avgKoalas){
+    console.log("Dolphin wins the by score" + avgDolphin)
+}
+else{
+    console.log("koalas wins the by score" +" " + avgKoalas)
+}
+
+function checkwinner(avgDolphin, avgKoala){
+    return avgDolphin<avgKoala;
+}
+console.log(checkwinner(avgDolphin, avgKoalas))
+
+// const caclAverage= (s1, s2, s3)=> console.log((s1+s2+s3)/3)
+// caclAverage(44, 23, 71);
