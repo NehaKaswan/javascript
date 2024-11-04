@@ -96,6 +96,10 @@
 /////function///
 
 /////array assign1 part-2
+
+console.log("----assign second--");
+
+
 function caclAverage(s1, s2, s3){
     return (s1+s2+s3)/3
 }
@@ -119,3 +123,61 @@ console.log(checkwinner(avgDolphin, avgKoalas))
 
 // const caclAverage= (s1, s2, s3)=> console.log((s1+s2+s3)/3)
 // caclAverage(44, 23, 71);
+
+
+
+//2nd
+
+function caclTip(bill){
+    a= bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    return a;
+}
+b =caclTip(100);
+console.log(b);
+  
+const billValue =[125, 555, 44]
+// const tips =[caclTip(billValue[0]), caclTip(billValue[1]), caclTip(billValue[2])];
+// const total =[tips[0]+billValue[0], tips[1]+billValue[1], tips[2]+billValue[2]]
+console.log(billValue);
+// console.log(tips);
+// console.log(total)
+
+//3rd
+
+const person ={
+    fullName1: "Mark",
+    markMass:78,
+    markHeight:1.69,
+    fullName2: "John",
+    johnMass:92,
+    johnHeight:1.95,
+    markBMI:caclBMI,
+
+}
+console.log(person);
+
+function caclBMI(a,b){
+  return a/b**2;
+}
+console.log(caclBMI(person.markMass, person.markHeight), caclBMI(person.johnMass, person.johnHeight));
+
+
+const bill =[22, 295, 176, 440, 37, 105, 10, 1100, 86, 52]
+function caclTip(bill){
+    a= bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+    return a;
+}
+for(let i=0; i <bill.length; i++){
+  tip=(caclTip(bill[i]));
+  total =(tip+bill[i]);
+  console.log(tip,total);
+}
+let sum=0;
+for(let i=0; i<bill.length; i++){
+sum+=bill[i]
+}
+console.log(sum);
+function average(a,b){
+    return a/b;
+}
+console.log(average(sum, bill.length));

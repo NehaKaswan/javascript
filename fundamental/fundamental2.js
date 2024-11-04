@@ -216,18 +216,31 @@ console.log(classMark.includes("neha"));
 // Challenge
 // (Bhavya) has (3) friends, and his best friend is called (Micheal)
 
-const Neha=[
-    "Neha",
-     "Bishnoi",
-     2004,
-    "student",
-    ["Sneha", "Muskan", "Komal"],
-    true,
-]
+const Neha={
+   firstName: "Neha",
+    lastName: "Bishnoi",
+     birthYear: 2004,
+   job: "student",
+   friends: ["Sneha", "Muskan", "Komal"],
+   hasDriverLicense: true,
+}
 console.log(Neha.length);
-//   const :function (birthYear){
-//     return 2024-birthYear;
+//  calcAge: function(birthYear){
+//    return 2024-birthYear;
+//    },
+// calcAge: function (birthYear) {
+//     return 2024 - birthYear;
+//   };
+
+//   calcAge: function () {
+//     console.log(this);
+//     return 2024 - this.birthYear;
 //   },
+
+//   calcAge: function () {
+//     this.age = 2024 - this.birthYear;
+//     return this.age;
+//   };
 
 
 
@@ -270,12 +283,3 @@ while (i <= 5) {
 }
 
 
-for (let rep = 1; rep <= 30; rep = rep + 1) {
-    console.log(`Lifting weight repitition ${rep} 🏋️`);
-  }
-  
-  let rep = 1;
-  while (rep <= 10) {
-    console.log(`Lifting weight repitition ${rep} 🏋️`);
-    rep++;
-  }
